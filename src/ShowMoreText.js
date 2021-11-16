@@ -99,7 +99,8 @@ class ShowMoreText extends Component {
 
     const { expanded: expandedState, truncated } = this.state;
 
-    const expanded = expanded === undefined ? expandedState : expandedProps;
+    const expanded =
+      expandedProps === undefined ? expandedState : expandedProps;
 
     return (
       <div className={className}>
